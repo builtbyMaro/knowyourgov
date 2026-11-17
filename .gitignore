@@ -1,0 +1,15 @@
+/node_modules/
+/.next/
+/out/
+/next-env.d.ts
+*.tsbuildinfo
+*.log
+.env*
+!.env.example
+/.openai/
+/.vercel/
+
+# Source data downloads; the runtime dataset lives under src/data/.
+/lga-source.json
+/state-source.json
+/locations.json
