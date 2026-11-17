@@ -2,7 +2,7 @@ import Link from 'next/link';
 import {presidentResponsibilities,presidentEveryday} from '@/data/president';
 import s from './site.module.css';
 export function PresidentPage(){return <>
-<section className={s.pageHero}><div className={s.wrap}><div className={s.breadcrumbs}><Link href="/">Home</Link> / <Link href="/government/">Explore Government</Link> / <Link href="/government/federal/">Federal Government</Link> / President</div><span className={s.eyebrow}>FEDERAL GOVERNMENT · EXECUTIVE</span><h1>President</h1><p>The President leads Nigeria’s federal executive and serves as head of state, head of government and Commander-in-Chief of the Armed Forces.</p></div></section>
+<section className={s.pageHero}><div className={s.wrap}><div className={s.breadcrumbs}><Link href="/">Home</Link> / <Link href="/government/">Understand Government</Link> / <Link href="/government/federal/">Federal Government</Link> / President</div><span className={s.eyebrow}>FEDERAL GOVERNMENT · EXECUTIVE</span><h1>President</h1><p>The President leads Nigeria’s federal executive and serves as head of state, head of government and Commander-in-Chief of the Armed Forces.</p></div></section>
 <section className={s.section}><div className={`${s.wrap} ${s.split}`}><article className={s.content}>
 <h2>What does the President do?</h2><p>The President leads the part of the federal government responsible for putting laws into effect and running federal programmes. The office represents Nigeria as a whole—not one state or constituency. Its powers come with duties, limits and checks from other institutions.</p>
 {presidentResponsibilities.map(item=><section key={item.title}><h3>{item.title}</h3>{item.paragraphs.map(p=><p key={p}>{p}</p>)}</section>)}

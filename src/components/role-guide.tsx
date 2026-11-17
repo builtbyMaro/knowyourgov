@@ -20,7 +20,7 @@ export function RoleGuide({ position, guide }: { position: Position; guide: Guid
       <section className={s.pageHero}>
         <div className={s.wrap}>
           <nav aria-label="Breadcrumb" className={s.breadcrumbs}>
-            <Link href="/">Home</Link> / <Link href="/government/">Explore Government</Link> /{' '}
+            <Link href="/">Home</Link> / <Link href="/government/">Understand Government</Link> /{' '}
             <Link href={levelHref}>{position.level} Government</Link> / <span aria-current="page">{position.name}</span>
           </nav>
           <span className={s.eyebrow}>{position.level.toUpperCase()} GOVERNMENT · {position.arm.toUpperCase()}</span>

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import {vicePresidentResponsibilities,vicePresidentEveryday} from '@/data/vice-president';
 import s from './site.module.css';
 export function VicePresidentPage(){return <>
-<section className={s.pageHero}><div className={s.wrap}><div className={s.breadcrumbs}><Link href="/">Home</Link> / <Link href="/government/">Explore Government</Link> / <Link href="/government/federal/">Federal Government</Link> / Vice President</div><span className={s.eyebrow}>FEDERAL GOVERNMENT · EXECUTIVE</span><h1>Vice President</h1><p>The Vice President supports the President, chairs the National Economic Council and helps provide continuity in the presidency.</p></div></section>
+<section className={s.pageHero}><div className={s.wrap}><div className={s.breadcrumbs}><Link href="/">Home</Link> / <Link href="/government/">Understand Government</Link> / <Link href="/government/federal/">Federal Government</Link> / Vice President</div><span className={s.eyebrow}>FEDERAL GOVERNMENT · EXECUTIVE</span><h1>Vice President</h1><p>The Vice President supports the President, chairs the National Economic Council and helps provide continuity in the presidency.</p></div></section>
 <section className={s.section}><div className={`${s.wrap} ${s.split}`}><article className={s.content}>
 <h2>What does the Vice President do?</h2><p>The Vice President is the second-highest office in the federal executive. Some responsibilities come from the Constitution or law; others are assigned by the President. That means the office has continuing constitutional functions, while the specific projects it leads can change.</p>
 {vicePresidentResponsibilities.map(item=><section key={item.title}><h3>{item.title}</h3>{item.paragraphs.map(p=><p key={p}>{p}</p>)}</section>)}
